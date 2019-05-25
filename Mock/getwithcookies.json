@@ -1,0 +1,36 @@
+[
+  {
+    "description":"这是一个获取cookies的get请求",
+    "request": {
+      "uri": "/getcookies",
+      "method": "get",
+      "queries": {
+        "username": "zhangsan",
+        "password": "1234"
+      }
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "cookies": {
+        "login": "true"
+      },
+      "text": "get cookies success中文"
+    }
+  },
+  {
+    "description": "这是一个带cookies的get请求",
+    "request": {
+      "uri": "/get/with/cookies",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "status": 200,
+      "text": "get with cookies visit success!!!"
+  }}
+
+]

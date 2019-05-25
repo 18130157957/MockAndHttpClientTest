@@ -1,0 +1,27 @@
+[{
+  "description":"这是一个重定向",
+  "request": {
+    "uri": "/redirect",
+    "method": "get"
+  },
+  "redirectTo": "http://wwww.baidu.com"
+},
+  {
+    "description": "重定向到自己的网页",
+    "request": {
+      "uri": "/redirect/mypath",
+      "method": "get"
+    },
+    "redirectTo":"/mypath"
+  },
+  {
+    "description": "要被重定向的网页",
+    "request":{
+      "uri": "/mypath",
+      "method": "get"
+    },
+    "response": {
+      "text": "redirect SUCCESS....."
+    }
+  }
+]

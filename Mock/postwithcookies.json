@@ -1,0 +1,39 @@
+[
+  {"description":"这是一个post请求",
+    "request": {
+      "uri": "/postcookies",
+      "method": "post",
+      "forms": {
+        "name": "jinjin",
+        "sex": "man"
+      }
+    },
+
+    "response": {
+     "cookies": {
+       "login": "true"
+     },
+    "text": "login SUCCESS"
+    }
+  },{
+  "description": "post请求带cookies数据",
+  "request": {
+    "uri": "/post/with/cookies",
+    "method": "post",
+    "cookies": {
+      "login": "true"
+    },
+    "json": {
+      "ssn": "jinjin",
+      "password": "1234"
+    }
+  },
+  "response": {
+    "status": 200,
+    "json": {
+      "code": "1",
+      "message": "login success"
+    }
+  }
+}
+]
